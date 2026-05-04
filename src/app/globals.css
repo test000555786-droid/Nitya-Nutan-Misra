@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-playfair: 'Playfair Display', Georgia, serif;
+  --font-dm-sans: 'DM Sans', system-ui, sans-serif;
+  --color-primary: #157f72;
+  --color-primary-dark: #13665d;
+  --color-primary-light: #1fa08e;
+  --color-secondary: #d9911f;
+  --color-bg: #f8f9fa;
+  --navbar-height: 80px;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    @apply font-body text-neutral-800 bg-white;
+    font-size: 16px;
+    line-height: 1.6;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display leading-tight;
+  }
+
+  ::selection {
+    background-color: rgba(21, 127, 114, 0.2);
+    color: #13665d;
+  }
+}
+
+@layer components {
+  .section-padding {
+    @apply py-16 md:py-24;
+  }
+
+  .container-custom {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center gap-2 bg-primary-600 hover:bg-primary-700 text-white font-body font-semibold px-6 py-3 rounded-xl shadow-primary hover:shadow-elevated transition-all duration-300 hover:-translate-y-0.5 active:translate-y-0;
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center gap-2 bg-white hover:bg-neutral-50 text-primary-700 font-body font-medium border border-primary-200 hover:border-primary-400 px-6 py-3 rounded-xl transition-all duration-300 hover:-translate-y-0.5;
+  }
+
+  .btn-call {
+    @apply inline-flex items-center gap-2 bg-secondary hover:bg-secondary-600 text-white font-body font-semibold px-5 py-2.5 rounded-full shadow-md hover:shadow-lg transition-all duration-300 hover:-translate-y-0.5;
+  }
+
+  .card-hover {
+    @apply transition-all duration-300 hover:shadow-elevated hover:-translate-y-1;
+  }
+
+  .gradient-text {
+    @apply bg-clip-text text-transparent;
+    background-image: linear-gradient(135deg, #157f72 0%, #1fa08e 50%, #d9911f 100%);
+  }
+
+  .section-label {
+    @apply inline-flex items-center gap-2 text-primary-600 font-body font-semibold text-sm uppercase tracking-widest mb-3;
+  }
+
+  .inner-page-hero {
+    background-color: #0f5c52;
+    background-image:
+      radial-gradient(circle at 30% 50%, rgba(217, 145, 31, 0.12) 0%, transparent 60%),
+      radial-gradient(circle at 80% 20%, rgba(31, 160, 142, 0.15) 0%, transparent 50%);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .inner-page-hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  }
+
+  .prose-medical h2 {
+    @apply font-display text-2xl text-neutral-800 mt-8 mb-4;
+  }
+
+  .prose-medical h3 {
+    @apply font-display text-xl text-neutral-700 mt-6 mb-3;
+  }
+
+  .prose-medical p {
+    @apply text-neutral-600 leading-relaxed mb-4;
+  }
+
+  .prose-medical strong {
+    @apply font-semibold text-neutral-800;
+  }
+
+  .prose-medical ul {
+    @apply list-disc list-inside text-neutral-600 mb-4 space-y-1;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .scrollbar-hide {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+/* Smooth scroll offset for fixed navbar */
+[id] {
+  scroll-margin-top: calc(var(--navbar-height) + 16px);
+}
+
+/* Framer Motion page wrapper */
+.page-wrapper {
+  min-height: 100vh;
+}

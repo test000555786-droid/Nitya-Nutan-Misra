@@ -1,0 +1,35 @@
+export const siteConfig = {
+  name: 'Dr. Nitya Nutan Misra',
+  title: 'Dr. Nitya Nutan Misra | Surgical Oncologist | Cancer Specialist Odisha',
+  description:
+    'Dr. Nitya Nutan Misra is a Surgical Oncologist & Assistant Professor at Acharya Harihar Post Graduate Institute of Cancer. Expert in Breast Cancer, Head & Neck Cancer, GI Cancer, Thyroid Tumors & Sarcoma surgery.',
+  url: 'https://drnityanutanmisra.com',
+  phone: '+917008016514',
+  phoneDisplay: '+91 70080 16514',
+  email: 'contact@drnityanutanmisra.com',
+  address: 'Acharya Harihar Post Graduate Institute of Cancer, Cuttack, Odisha',
+  hospital: 'Acharya Harihar Post Graduate Institute of Cancer',
+  city: 'Cuttack, Odisha',
+  specialization: 'Surgical Oncologist',
+  designation: 'Assistant Professor',
+  tagline: 'Early diagnosis saves lives.',
+  keywords: [
+    'surgical oncologist odisha',
+    'cancer surgeon cuttack',
+    'breast cancer surgery odisha',
+    'head neck cancer surgeon',
+    'gastrointestinal cancer specialist',
+    'thyroid tumor surgery',
+    'sarcoma specialist',
+    'AHPGIC doctor',
+    'cancer hospital cuttack',
+    'oncology surgeon india',
+  ],
+  social: {
+    twitter: 'https://twitter.com/',
+    linkedin: 'https://linkedin.com/',
+  },
+  og: {
+    image: '/images/og-image.jpg',
+  },
+}
