@@ -27,9 +27,9 @@ export const doctorProfile: DoctorProfile = {
   ],
   bio: `Dr. Nitya Nutan Misra is a distinguished Surgical Oncologist and Assistant Professor at the Acharya Harihar Post Graduate Institute of Cancer (AHPGIC), Cuttack — one of India's premier dedicated cancer treatment centers. With advanced training in surgical oncology, Dr. Misra has dedicated her career to offering precision-driven, evidence-based cancer surgery to patients across Odisha and beyond.
 
-Her clinical expertise spans the entire spectrum of solid tumour surgeries: from breast cancer and complex head & neck procedures to gastrointestinal malignancies, thyroid & endocrine tumors, and sarcomas. She brings a multidisciplinary approach to every case — collaborating closely with medical oncologists, radiation oncologists, and pathologists to ensure each patient receives a comprehensive, individualized treatment plan.
+Her clinical expertise spans the entire spectrum of solid tumour surgeries: from breast cancer and complex head & neck procedures to gastrointestinal malignancies, thyroid & endocrine tumors, and sarcomas. Hebrings a multidisciplinary approach to every case — collaborating closely with medical oncologists, radiation oncologists, and pathologists to ensure each patient receives a comprehensive, individualized treatment plan.
 
-Dr. Misra is deeply committed to the philosophy that early diagnosis saves lives. She actively engages in community outreach and cancer awareness initiatives, helping patients in Odisha access timely, quality oncological care. Her practice is guided by three core principles: Compassion, Precision, and comprehensive Cancer Care.`,
+Dr. Misra is deeply committed to the philosophy that early diagnosis saves lives. Heactively engages in community outreach and cancer awareness initiatives, helping patients in Odisha access timely, quality oncological care. Her practice is guided by three core principles: Compassion, Precision, and comprehensive Cancer Care.`,
   shortBio:
     'Surgical Oncologist & Assistant Professor at AHPGIC Cuttack. Specialized in breast, head & neck, GI, thyroid and sarcoma surgeries with a multidisciplinary, patient-centered approach.',
   stats: [
@@ -57,7 +57,7 @@ export const testimonials: Testimonial[] = [
     location: 'Bhubaneswar, Odisha',
     rating: 5,
     message:
-      'I was diagnosed with thyroid cancer and was referred to Dr. Misra. She explained the treatment clearly and the surgery was successful. Today I am leading a normal life. She is truly a blessing for cancer patients in Odisha.',
+      'I was diagnosed with thyroid cancer and was referred to Dr. Misra. Heexplained the treatment clearly and the surgery was successful. Today I am leading a normal life. Heis truly a blessing for cancer patients in Odisha.',
     treatment: 'Thyroid Cancer Surgery',
     date: '2024',
   },
