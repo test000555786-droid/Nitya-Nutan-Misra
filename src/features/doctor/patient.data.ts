@@ -6,7 +6,7 @@ export const faqs: FAQ[] = [
     category: 'Appointments',
     question: 'How do I book a consultation with Dr. Nitya Nutan Misra?',
     answer:
-      'You can book a consultation by calling +91 70080 16514 directly. Outpatient consultations are available at Acharya Harihar Post Graduate Institute of Cancer (AHPGIC), Cuttack. Please carry all previous medical records, imaging reports, biopsy reports, and current medications.',
+      'You can book a consultation by calling +91 94388 44662 directly. Outpatient consultations are available at Acharya Harihar Post Graduate Institute of Cancer (AHPGIC), Cuttack. Please carry all previous medical records, imaging reports, biopsy reports, and current medications.',
   },
   {
     id: '2',

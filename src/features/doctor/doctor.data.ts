@@ -10,7 +10,7 @@ export const doctorProfile: DoctorProfile = {
     'MBBS',
     'MS (General Surgery)',
     'MCh (Surgical Oncology)',
-    'FAIS (Fellow – Association of Surgeons of India)',
+    'EFIAGES (Endoscopy Fellowship of Indian Association of Gastrointestinal Endo-Surgeons)',
   ],
   achievements: [
     'Assistant Professor – Department of Surgical Oncology, AHPGIC Cuttack',

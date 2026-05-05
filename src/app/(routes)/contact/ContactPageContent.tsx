@@ -64,8 +64,25 @@ export function ContactPageContent() {
     e.preventDefault()
     if (!validate()) return
     setStatus('loading')
-    // Simulate form submission (replace with actual API call)
-    await new Promise((res) => setTimeout(res, 1500))
+    
+    // Small delay for UI feedback
+    await new Promise((res) => setTimeout(res, 800))
+    
+    const phoneNumber = siteConfig.phone.replace(/[^0-9]/g, '')
+    const whatsappMessage = `*New Enquiry from Website*
+*Name:* ${form.name}
+*Phone:* ${form.phone}
+*Email:* ${form.email || 'N/A'}
+*Subject:* ${form.subject}
+
+*Message:*
+${form.message}`
+
+    const encodedMessage = encodeURIComponent(whatsappMessage)
+    const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodedMessage}`
+
+    window.open(whatsappUrl, '_blank')
+
     setStatus('success')
     setForm(initialForm)
   }
@@ -98,7 +115,7 @@ export function ContactPageContent() {
             className="font-body text-white/70 text-lg max-w-xl mx-auto"
             initial={{ opacity: 0, y: 14 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, delay: 0.2 }}
           >
-            Reach Dr. Nitya Nutan Misra at AHPGIC, Cuttack for cancer consultations, second opinions, or general enquiries.
+            Reach Dr. Nitya Nutan Misra at his clinic in Cuttack for cancer consultations, second opinions, or general enquiries.
           </motion.p>
           <nav className="mt-4 flex items-center justify-center gap-2 text-white/50 text-sm font-body" aria-label="Breadcrumb">
             <Link href="/" className="hover:text-white/80 transition-colors">Home</Link>
@@ -138,10 +155,10 @@ export function ContactPageContent() {
                 },
                 {
                   icon: MapPin,
-                  label: 'Hospital Address',
+                  label: 'Clinic Address',
                   value: siteConfig.hospital,
-                  sub: 'Cuttack, Odisha, India',
-                  href: 'https://maps.google.com/?q=Acharya+Harihar+Post+Graduate+Institute+of+Cancer+Cuttack',
+                  sub: 'Kathagola, Ring Rd, Cuttack, Odisha 753110',
+                  href: 'https://maps.google.com/?q=Sai+shree+polyclinic+Cuttack+At-+Kathagola,+Ring+Rd,+near+Shree+Maa,+Cuttack,+Odisha+753110',
                   cta: 'Get Directions',
                   highlight: false,
                 },
@@ -174,8 +191,8 @@ export function ContactPageContent() {
                       <p className={`font-body text-xs mb-3 ${highlight ? 'text-white/60' : 'text-neutral-500'}`}>{sub}</p>
                       <a
                         href={href}
-                        target={label === 'Hospital Address' ? '_blank' : undefined}
-                        rel={label === 'Hospital Address' ? 'noopener noreferrer' : undefined}
+                        target={label === 'Clinic Address' ? '_blank' : undefined}
+                        rel={label === 'Clinic Address' ? 'noopener noreferrer' : undefined}
                         className={`inline-flex items-center gap-1.5 font-body text-xs font-semibold px-3 py-1.5 rounded-lg transition-all duration-200 ${
                           highlight
                             ? 'bg-white text-primary-700 hover:bg-primary-50'
@@ -235,9 +252,9 @@ export function ContactPageContent() {
                     <div className="w-16 h-16 rounded-full bg-primary-50 flex items-center justify-center mb-4">
                       <CheckCircle2 className="w-8 h-8 text-primary-600" />
                     </div>
-                    <h3 className="font-display text-xl font-bold text-neutral-900 mb-2">Message Sent!</h3>
+                    <h3 className="font-display text-xl font-bold text-neutral-900 mb-2">Redirecting to WhatsApp!</h3>
                     <p className="font-body text-neutral-500 text-sm max-w-sm">
-                      Thank you for reaching out. Dr. Misra's team will get back to you within 24 hours.
+                      Thank you for reaching out. Please complete the message on WhatsApp to send it to Dr. Misra's team.
                     </p>
                     <button
                       onClick={() => setStatus('idle')}
@@ -369,7 +386,7 @@ export function ContactPageContent() {
                       ) : (
                         <>
                           <Send className="w-5 h-5" />
-                          Send Message
+                          Send via WhatsApp
                         </>
                       )}
                     </button>
@@ -392,12 +409,12 @@ export function ContactPageContent() {
       <section aria-labelledby="map-heading" className="pb-16 bg-white">
         <div className="container-custom">
           <h2 id="map-heading" className="font-display text-2xl font-bold text-neutral-900 mb-6 text-center">
-            Find Us at AHPGIC, Cuttack
+            Find Us at our Clinic in Cuttack
           </h2>
           <div className="rounded-3xl overflow-hidden shadow-card border border-neutral-100 aspect-video w-full max-h-[450px]">
             <iframe
-              title="Acharya Harihar Post Graduate Institute of Cancer, Cuttack, Odisha"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3740.5553453265!2d85.87746!3d20.47043!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a190948f1f9b4d7%3A0x7b23f8f5d5e4c5a0!2sAcharya%20Harihar%20Post%20Graduate%20Institute%20of%20Cancer!5e0!3m2!1sen!2sin!4v1700000000000"
+              title="Clinic Location - Sai shree polyclinic, Cuttack, Odisha"
+              src="https://www.google.com/maps?q=Sai+shree+polyclinic+Cuttack+At-+Kathagola,+Ring+Rd,+near+Shree+Maa,+Cuttack,+Odisha+753110&output=embed"
               width="100%"
               height="100%"
               style={{ border: 0 }}
@@ -408,11 +425,11 @@ export function ContactPageContent() {
           </div>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mt-6">
             <a
-              href="https://maps.google.com/?q=Acharya+Harihar+Post+Graduate+Institute+of+Cancer+Cuttack"
+              href="https://maps.google.com/?q=Sai+shree+polyclinic+Cuttack+At-+Kathagola,+Ring+Rd,+near+Shree+Maa,+Cuttack,+Odisha+753110"
               target="_blank"
               rel="noopener noreferrer"
               className="btn-primary"
-              aria-label="Get directions to AHPGIC Cuttack on Google Maps"
+              aria-label="Get directions to the clinic on Google Maps"
             >
               <MapPin className="w-4 h-4" />
               Get Directions
