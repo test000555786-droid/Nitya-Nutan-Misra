@@ -83,7 +83,7 @@ Dr. Misra performs total thyroidectomy, hemithyroidectomy, parathyroidectomy, ad
       'Specialist limb-salvage and wide-excision surgery for soft tissue and bone sarcomas.',
     fullDesc: `Sarcomas are rare but aggressive tumours arising from soft tissues (muscles, fat, nerves, blood vessels) or bone. They demand specialised expertise for wide-margin excision while preserving maximum limb function.
 
-Dr. Nitya Nutan Misra is trained in wide local excision, limb-salvage surgery, and compartmentectomy for soft tissue sarcomas. For retroperitoneal sarcomas, Heperforms complex resections in coordination with vascular and reconstructive surgery teams. Post-operative adjuvant therapy is planned collaboratively.`,
+Dr. Nitya Nutan Misra is trained in wide local excision, limb-salvage surgery, and compartmentectomy for soft tissue sarcomas. For retroperitoneal sarcomas, He performs complex resections in coordination with vascular and reconstructive surgery teams. Post-operative adjuvant therapy is planned collaboratively.`,
     icon: 'bone',
     benefits: [
       'Limb-salvage over amputation wherever feasible',
@@ -101,7 +101,7 @@ Dr. Nitya Nutan Misra is trained in wide local excision, limb-salvage surgery, a
       'Integrated tumour board-driven care combining surgery, chemotherapy, radiation, and supportive oncology.',
     fullDesc: `Modern cancer care is fundamentally multidisciplinary. Dr. Misra firmly believes that the best outcomes arise when surgical oncologists, medical oncologists, radiation oncologists, pathologists, radiologists, and palliative care specialists work together.
 
-At AHPGIC, Heparticipates in and leads tumour board meetings to formulate individualised treatment plans for every patient. This ensures each case is reviewed comprehensively — and the most appropriate combination of surgery, neoadjuvant or adjuvant chemotherapy, radiation, targeted therapy, or immunotherapy is deployed.`,
+At AHPGIC, He participates in and leads tumour board meetings to formulate individualised treatment plans for every patient. This ensures each case is reviewed comprehensively — and the most appropriate combination of surgery, neoadjuvant or adjuvant chemotherapy, radiation, targeted therapy, or immunotherapy is deployed.`,
     icon: 'users',
     benefits: [
       'Weekly multidisciplinary tumour board meetings',

@@ -25,11 +25,11 @@ export const doctorProfile: DoctorProfile = {
     'Member – Association of Surgeons of India (ASI)',
     'Member – Indian Association of Surgical Oncology (IASO)',
   ],
-  bio: `Dr. Nitya Nutan Misra is a distinguished Surgical Oncologist and Assistant Professor at the Acharya Harihar Post Graduate Institute of Cancer (AHPGIC), Cuttack — one of India's premier dedicated cancer treatment centers. With advanced training in surgical oncology, Dr. Misra has dedicatedhiscareer to offering precision-driven, evidence-based cancer surgery to patients across Odisha and beyond.
+  bio: `Dr. Nitya Nutan Misra is a distinguished Surgical Oncologist and Assistant Professor at the Acharya Harihar Post Graduate Institute of Cancer (AHPGIC), Cuttack — one of India's premier dedicated cancer treatment centers. With advanced training in surgical oncology, Dr. Misra has dedicated his career to offering precision-driven, evidence-based cancer surgery to patients across Odisha and beyond.
 
-His clinical expertise spans the entire spectrum of solid tumour surgeries: from breast cancer and complex head & neck procedures to gastrointestinal malignancies, thyroid & endocrine tumors, and sarcomas. Hebrings a multidisciplinary approach to every case — collaborating closely with medical oncologists, radiation oncologists, and pathologists to ensure each patient receives a comprehensive, individualized treatment plan.
+His clinical expertise spans the entire spectrum of solid tumour surgeries: from breast cancer and complex head & neck procedures to gastrointestinal malignancies, thyroid & endocrine tumors, and sarcomas. He brings a multidisciplinary approach to every case — collaborating closely with medical oncologists, radiation oncologists, and pathologists to ensure each patient receives a comprehensive, individualized treatment plan.
 
-Dr. Misra is deeply committed to the philosophy that early diagnosis saves lives. Heactively engages in community outreach and cancer awareness initiatives, helping patients in Odisha access timely, quality oncological care.Hispractice is guided by three core principles: Compassion, Precision, and comprehensive Cancer Care.`,
+Dr. Misra is deeply committed to the philosophy that early diagnosis saves lives. He actively engages in community outreach and cancer awareness initiatives, helping patients in Odisha access timely, quality oncological care. His practice is guided by three core principles: Compassion, Precision, and comprehensive Cancer Care.`,
   shortBio:
     'Surgical Oncologist & Assistant Professor at AHPGIC Cuttack. Specialized in breast, head & neck, GI, thyroid and sarcoma surgeries with a multidisciplinary, patient-centered approach.',
   stats: [
@@ -47,7 +47,7 @@ export const testimonials: Testimonial[] = [
     location: 'Cuttack, Odisha',
     rating: 5,
     message:
-      "Dr. Misra's diagnosis was swift and his surgical precision remarkable. After my breast cancer treatment, I feel completely cancer-free.Hiscalm approach gave our family tremendous confidence during the most difficult time of our lives.",
+      "Dr. Misra's diagnosis was swift and his surgical precision remarkable. After my breast cancer treatment, I feel completely cancer-free.His calm approach gave our family tremendous confidence during the most difficult time of our lives.",
     treatment: 'Breast Cancer Surgery',
     date: '2024',
   },
@@ -57,7 +57,7 @@ export const testimonials: Testimonial[] = [
     location: 'Bhubaneswar, Odisha',
     rating: 5,
     message:
-      'I was diagnosed with thyroid cancer and was referred to Dr. Misra. He explained the treatment clearly and the surgery was successful. Today I am leading a normal life. Heis truly a blessing for cancer patients in Odisha.',
+      'I was diagnosed with thyroid cancer and was referred to Dr. Misra. He explained the treatment clearly and the surgery was successful. Today I am leading a normal life. He is truly a blessing for cancer patients in Odisha.',
     treatment: 'Thyroid Cancer Surgery',
     date: '2024',
   },

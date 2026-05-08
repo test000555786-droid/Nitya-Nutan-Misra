@@ -1,5 +1,5 @@
 {
+  "/icon/[[...__metadata_id__]]/route": "app/icon/[[...__metadata_id__]]/route.js",
   "/page": "app/page.js",
-  "/(routes)/about/page": "app/(routes)/about/page.js",
-  "/(routes)/services/page": "app/(routes)/services/page.js"
+  "/(routes)/patient-corner/page": "app/(routes)/patient-corner/page.js"
 }

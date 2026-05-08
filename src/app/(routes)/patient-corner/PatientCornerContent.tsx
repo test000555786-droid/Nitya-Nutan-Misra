@@ -152,7 +152,7 @@ export function PatientCornerContent() {
               {
                 step: '01',
                 title: 'Consultation & Evaluation',
-                desc: 'Meet Dr. Misra with all your reports. Hewill take a detailed history, perform a clinical examination, and advise appropriate investigations.',
+                desc: 'Meet Dr. Misra with all your reports. He will take a detailed history, perform a clinical examination, and advise appropriate investigations.',
                 color: 'bg-primary-600',
               },
               {
