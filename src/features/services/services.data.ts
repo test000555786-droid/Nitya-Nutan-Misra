@@ -9,7 +9,7 @@ export const services: Service[] = [
       'Advanced surgical treatment for breast cancer including breast-conserving surgery, mastectomy, and oncoplastic techniques.',
     fullDesc: `Breast cancer is one of the most common cancers among women, and surgical intervention remains a cornerstone of treatment. Dr. Nitya Nutan Misra offers the full spectrum of breast cancer surgical procedures tailored to the disease stage, tumour biology, and patient preference.
 
-Her expertise covers breast-conserving surgery (lumpectomy), modified radical mastectomy, sentinel lymph node biopsy, axillary lymph node dissection, and oncoplastic breast surgery — combining oncological safety with aesthetic outcomes.
+His expertise covers breast-conserving surgery (lumpectomy), modified radical mastectomy, sentinel lymph node biopsy, axillary lymph node dissection, and oncoplastic breast surgery — combining oncological safety with aesthetic outcomes.
 
 Every case is evaluated through a multidisciplinary tumour board to ensure optimal treatment planning.`,
     icon: 'ribbon',
